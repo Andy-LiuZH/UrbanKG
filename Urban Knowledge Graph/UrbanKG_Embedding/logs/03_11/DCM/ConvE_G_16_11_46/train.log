@@ -1,0 +1,6 @@
+2025-03-11 16:11:46,986 - Logs and model will be saved in logs/03_11/DCM/ConvE_G_16_11_46
+2025-03-11 16:11:46,991 - Loaded 34329 entities.
+2025-03-11 16:11:46,991 - Loaded 7 relations.
+2025-03-11 16:11:46,995 - Train samples: 207170, Valid samples: 11509, Test samples: 11510
+2025-03-11 16:11:47,091 - Loaded literal embeddings with shape: (34329, 23)
+2025-03-11 16:12:19,065 - Epoch 1/50, Loss: 0.0254078172147274

@@ -1,0 +1,8 @@
+{
+    "dataset": "DCM",
+    "model_name": "DistMult_L",
+    "epochs": 50,
+    "batch_size": 1024,
+    "learning_rate": 0.001,
+    "cuda": false
+}

@@ -1,0 +1,4 @@
+hasType 0
+locatesAt 1
+nearBy 2
+belongsTo 3

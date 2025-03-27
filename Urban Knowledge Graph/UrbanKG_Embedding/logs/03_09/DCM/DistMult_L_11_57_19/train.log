@@ -1,0 +1,6 @@
+2025-03-09 11:57:19,789 - Logs and model will be saved in logs/03_09/DCM/DistMult_L_11_57_19
+2025-03-09 11:57:19,793 - Loaded 34329 entities.
+2025-03-09 11:57:19,793 - Loaded 7 relations.
+2025-03-09 11:57:19,797 - Train samples: 207170, Valid samples: 11509, Test samples: 11510
+2025-03-09 11:57:19,895 - Loaded literal embeddings with shape: (34329, 23)
+2025-03-09 11:57:45,379 - Epoch 1/10, Loss: 0.0008493986679241061
