@@ -1,5 +1,0 @@
-2025-03-11 16:15:44,658 - Logs and model will be saved in logs/03_11/DCM/Complex_G_16_15_44
-2025-03-11 16:15:44,665 - Loaded 34329 entities.
-2025-03-11 16:15:44,666 - Loaded 7 relations.
-2025-03-11 16:15:44,672 - Train samples: 207170, Valid samples: 11509, Test samples: 11510
-2025-03-11 16:15:44,827 - Loaded literal embeddings with shape: (34329, 23)

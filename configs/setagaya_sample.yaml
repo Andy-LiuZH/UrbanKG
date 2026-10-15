@@ -1,0 +1,45 @@
+# Sample build: 3x3 half-meshes (~1.7 km x 1.4 km) around Shimokitazawa, Setagaya.
+# Paths are relative to the project root.
+name: setagaya_sample
+output_dir: ukg_sample/setagaya
+
+study_area:
+  # Either `meshes` (9-digit 1/2 mesh codes) or `wards` (municipality codes, e.g. ["13112"]).
+  meshes: [533935824, 533935833, 533935834, 533935922, 533935924, 533935931, 533935932, 533935933, 533935934]
+
+sources:
+  # --- hierarchical spatial units ---------------------------------------
+  ward: data_sample/administrative/ward_n03.geojson              # N03 administrative boundaries
+  area: data_sample/administrative/area_estat_town.geojson       # e-Stat town (chome) boundaries
+  # region: {path: Tokyo23_mesh.shp}   # optional; by default mesh polygons are generated from codes
+
+  # --- basic urban units -------------------------------------------------
+  drm_road: data_sample/road/drm_road.geojson                     # DRM road links (SYNTHETIC sample)
+  railway_line: data_sample/road/railway_line.geojson             # railway lines keyed by LOD route
+  railway_lod: {dir: data_sample/road/railway_lod}                # railway LOD JSON (station order)
+  railway_station: data_sample/poi/railway_station.geojson        # station points per line
+  school: data_sample/poi/school_p29.geojson                      # P29 schools
+  zenrin:                                                         # Zenrin POI (SYNTHETIC sample)
+    dir: data_sample/poi/zenrin
+    pattern: "*.CSV"
+    encoding: shift_jis
+    crs: EPSG:4301
+
+  # --- attribute enrichment ----------------------------------------------
+  landuse: data_sample/landuse/landuse_l03b_u.geojson             # L03-b-u 100 m land use
+  population: data_sample/population/population_500m_mesh.geojson # 500 m mesh population (PTN_2020)
+
+  # --- human activity units ----------------------------------------------
+  od: data_sample/mobility/softbank_od.csv                        # Softbank OD (SYNTHETIC sample)
+  trips: data_sample/mobility/gps_trips.csv                       # GPS trips with purpose (SYNTHETIC sample)
+  survey: data_sample/mobility/survey.csv                         # respondent demographics (SYNTHETIC sample)
+
+params:
+  poi_road_max_distance_m: 20
+  region_nearby_max_distance_m: 3000
+  station_merge_distance_m: 500
+  loop_lines: ["山手線"]
+  landuse_attract_threshold: 0.2
+  survey_reference_year: 2023
+  split: {train: 0.9, valid: 0.05, seed: 2026}
+  text_typed_relations: false

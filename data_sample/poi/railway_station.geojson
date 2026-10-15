@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "railway_station",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "lod_key": "井の頭線", "route_name": "京王井の頭線", "operator": "京王電鉄", "sta_name": "新代田" }, "geometry": { "type": "Point", "coordinates": [ 139.66139, 35.662495 ] } },
+{ "type": "Feature", "properties": { "lod_key": "井の頭線", "route_name": "京王井の頭線", "operator": "京王電鉄", "sta_name": "下北沢" }, "geometry": { "type": "Point", "coordinates": [ 139.66657, 35.661605 ] } },
+{ "type": "Feature", "properties": { "lod_key": "井の頭線", "route_name": "京王井の頭線", "operator": "京王電鉄", "sta_name": "池ノ上" }, "geometry": { "type": "Point", "coordinates": [ 139.673455, 35.66037 ] } },
+{ "type": "Feature", "properties": { "lod_key": "小田急小田原線", "route_name": "小田急小田原線", "operator": "小田急電鉄", "sta_name": "下北沢" }, "geometry": { "type": "Point", "coordinates": [ 139.667345, 35.661445 ] } },
+{ "type": "Feature", "properties": { "lod_key": "小田急小田原線", "route_name": "小田急小田原線", "operator": "小田急電鉄", "sta_name": "世田谷代田" }, "geometry": { "type": "Point", "coordinates": [ 139.6616, 35.658355 ] } },
+{ "type": "Feature", "properties": { "lod_key": "小田急小田原線", "route_name": "小田急小田原線", "operator": "小田急電鉄", "sta_name": "東北沢" }, "geometry": { "type": "Point", "coordinates": [ 139.67304, 35.66544 ] } }
+]
+}

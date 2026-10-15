@@ -1,0 +1,52 @@
+{
+  "entity_type": "Region",
+  "attribute_order": [
+    "has_landuse_ratio_Agricultural",
+    "has_landuse_ratio_Natural",
+    "has_landuse_ratio_Unused",
+    "has_landuse_ratio_Mixed-use",
+    "has_landuse_ratio_Industrial",
+    "has_landuse_ratio_Residential",
+    "has_landuse_ratio_Transportation",
+    "has_landuse_ratio_Public",
+    "has_landuse_ratio_Open-space",
+    "has_population_density",
+    "has_inflow",
+    "has_outflow",
+    "has_POI_distribution_Factory",
+    "has_POI_distribution_Business",
+    "has_POI_distribution_Transportation",
+    "has_POI_distribution_Amusement",
+    "has_POI_distribution_Meal",
+    "has_POI_distribution_Accommodation",
+    "has_POI_distribution_Medical_service",
+    "has_POI_distribution_School",
+    "has_POI_distribution_Welfare",
+    "has_POI_distribution_Life_related",
+    "has_POI_distribution_Car_service",
+    "has_POI_distribution_Government",
+    "has_POI_distribution_Shopping",
+    "has_POI_distribution_others"
+  ],
+  "origin_attributes": [
+    "has_outflow",
+    "has_population_density"
+  ],
+  "destination_attributes": [
+    "has_inflow",
+    "has_POI_distribution_Factory",
+    "has_POI_distribution_Business",
+    "has_POI_distribution_Transportation",
+    "has_POI_distribution_Amusement",
+    "has_POI_distribution_Meal",
+    "has_POI_distribution_Accommodation",
+    "has_POI_distribution_Medical_service",
+    "has_POI_distribution_School",
+    "has_POI_distribution_Welfare",
+    "has_POI_distribution_Life_related",
+    "has_POI_distribution_Car_service",
+    "has_POI_distribution_Government",
+    "has_POI_distribution_Shopping",
+    "has_POI_distribution_others"
+  ]
+}

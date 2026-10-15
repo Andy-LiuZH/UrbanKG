@@ -1,0 +1,111 @@
+{
+  "config": "setagaya_sample",
+  "build_report": {
+    "spatial": {
+      "wards": 3,
+      "areas": 23,
+      "regions": 9
+    },
+    "urban": {
+      "roads": 51,
+      "railway_lines": 2,
+      "pois": 53,
+      "pois_zenrin": 40,
+      "pois_school": 8,
+      "pois_station": 5,
+      "blocks": 39,
+      "blocks_without_area": 0,
+      "pois_without_block": 5,
+      "lod_routes": 2,
+      "lod_station_refs_outside_study_area": 58
+    },
+    "attributes": {
+      "regions_with_landuse": 9,
+      "regions_with_population": 9
+    },
+    "activity": {
+      "od_rows": 72,
+      "od_pairs_in_study_area": 39,
+      "survey_users": 41,
+      "users_with_group": 40,
+      "trips_with_group": 118,
+      "groups": 26
+    }
+  },
+  "summary": {
+    "nodes": {
+      "Ward": 3,
+      "Area": 23,
+      "Region": 9,
+      "Block": 39,
+      "Road": 51,
+      "POI": 53,
+      "Group": 26,
+      "Purpose": 7,
+      "Cate": 14
+    },
+    "edges": {
+      "Ward__borderBy__Ward": 6,
+      "Area__belongsTo__Ward": 23,
+      "Area__borderBy__Area": 110,
+      "Block__belongsTo__Area": 39,
+      "Region__intersects__Area": 49,
+      "Region__borderBy__Region": 40,
+      "Region__nearby__Region": 72,
+      "Region__hasOD__Region": 39,
+      "Road__in__Area": 107,
+      "Road__in__Region": 82,
+      "POI__locatesAt__Region": 53,
+      "POI__locatesAt__Block": 48,
+      "POI__nearby__Road": 14,
+      "POI__nearby__Region": 26,
+      "POI__onLine__Road": 6,
+      "POI__nextTo__POI": 8,
+      "POI__hasType__Cate": 61,
+      "Purpose__prefers__Cate": 15,
+      "Group__goesUnder__Purpose": 83,
+      "Group__visits__Region": 82,
+      "Region__attracts__Purpose": 18
+    },
+    "literals": {
+      "has_POI_distribution_Accommodation": 9,
+      "has_POI_distribution_Amusement": 9,
+      "has_POI_distribution_Business": 9,
+      "has_POI_distribution_Car_service": 9,
+      "has_POI_distribution_Factory": 9,
+      "has_POI_distribution_Government": 9,
+      "has_POI_distribution_Life_related": 9,
+      "has_POI_distribution_Meal": 9,
+      "has_POI_distribution_Medical_service": 9,
+      "has_POI_distribution_School": 9,
+      "has_POI_distribution_Shopping": 9,
+      "has_POI_distribution_Transportation": 9,
+      "has_POI_distribution_Welfare": 9,
+      "has_POI_distribution_others": 9,
+      "has_inflow": 9,
+      "has_landuse_ratio_Agricultural": 9,
+      "has_landuse_ratio_Industrial": 9,
+      "has_landuse_ratio_Mixed-use": 9,
+      "has_landuse_ratio_Natural": 9,
+      "has_landuse_ratio_Open-space": 9,
+      "has_landuse_ratio_Public": 9,
+      "has_landuse_ratio_Residential": 9,
+      "has_landuse_ratio_Transportation": 9,
+      "has_landuse_ratio_Unused": 9,
+      "has_outflow": 9,
+      "has_population_density": 9
+    },
+    "total_nodes": 225,
+    "total_edges": 981,
+    "total_literals": 234
+  },
+  "text": {
+    "entities": 225,
+    "relations": 14,
+    "triples": 981,
+    "train": 882,
+    "valid": 49,
+    "test": 50,
+    "literals": 234
+  }
+}

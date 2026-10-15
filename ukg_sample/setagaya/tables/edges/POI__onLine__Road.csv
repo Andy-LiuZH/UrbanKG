@@ -1,0 +1,7 @@
+head_id,tail_id,line_name,operator,lod_key,station_order,source
+station_8408b3f355eb,rail_b834a9e012,京王井の頭線,京王電鉄,井の頭線,4,railway_lod
+station_9a1ade59258a,rail_b834a9e012,京王井の頭線,京王電鉄,井の頭線,5,railway_lod
+station_7804edbcbf76,rail_b834a9e012,京王井の頭線,京王電鉄,井の頭線,6,railway_lod
+station_4ae58c2552d7,rail_0b092d78a6,小田急小田原線,小田急電鉄,小田急小田原線,6,railway_lod
+station_9a1ade59258a,rail_0b092d78a6,小田急小田原線,小田急電鉄,小田急小田原線,7,railway_lod
+station_fcbf88fc4e7a,rail_0b092d78a6,小田急小田原線,小田急電鉄,小田急小田原線,8,railway_lod

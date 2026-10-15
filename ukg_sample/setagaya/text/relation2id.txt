@@ -1,0 +1,14 @@
+attracts	0
+belongsTo	1
+borderBy	2
+goesUnder	3
+hasOD	4
+hasType	5
+in	6
+intersects	7
+locatesAt	8
+nearby	9
+nextTo	10
+onLine	11
+prefers	12
+visits	13

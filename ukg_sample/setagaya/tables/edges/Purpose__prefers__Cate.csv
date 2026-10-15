@@ -1,0 +1,16 @@
+head_id,tail_id
+Work,Factory
+Work,Business
+School,School
+Business,Business
+Business,Transportation
+Shopping,Shopping
+Shopping,Life_related
+Eating,Meal
+Leisure,Amusement
+Leisure,Accommodation
+others,Car_service
+others,Government
+others,Medical_service
+others,Welfare
+others,others

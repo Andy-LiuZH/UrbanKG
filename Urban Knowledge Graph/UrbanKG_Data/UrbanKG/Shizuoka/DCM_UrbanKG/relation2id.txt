@@ -1,7 +1,0 @@
-locatesAt 0
-visit 1
-hasODFlow 2
-attracts 3
-hasType 4
-contains 5
-prefers 6

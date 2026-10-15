@@ -1,7 +1,7 @@
-UrbanKG_Data/Processed_data/Shizuoka/Mobile_OD_data/Shizuoka_ODflow.csv
-UrbanKG_Destination/Data/X_baseline.npy
-UrbanKG_Data/Processed_data/Shizuoka/Destination_data/Shizuoka_OD_202010.csv
-
-Urban Knowledge Graph/UrbanKG_Data/Processed_data/Shizuoka/Mobile_OD_data/Shizuoka_ODflow.csv
-Urban Knowledge Graph/UrbanKG_Destination/Data/X_baseline.npy
-Urban Knowledge Graph/UrbanKG_Data/Processed_data/Shizuoka/Destination_data/Shizuoka_OD_202010.csv
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+output/
+.DS_Store
+.idea/

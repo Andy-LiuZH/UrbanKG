@@ -1,0 +1,41 @@
+# Template for a full build (Tokyo 23 wards). Replace every path with your own data.
+# Sources you do not have can be removed; the relations that need them are skipped.
+name: tokyo23
+output_dir: output/tokyo23
+
+study_area:
+  wards: ["13101", "13102", "13103", "13104", "13105", "13106", "13107", "13108", "13109", "13110", "13111",
+          "13112", "13113", "13114", "13115", "13116", "13117", "13118", "13119", "13120", "13121", "13122", "13123"]
+  # extra_meshes: []   # e.g. railway-corridor meshes outside the wards
+
+sources:
+  ward: /path/to/N03/Tokyo23.shp
+  area: /path/to/estat/Tokyo23_towns.shp
+  # region: {path: /path/to/Tokyo23_mesh.shp}   # optional, otherwise generated from codes
+  drm_road: /path/to/DRM/DRM_Tokyo.shp
+  railway_line: /path/to/railway/Tokyo_whole_railway.shp
+  railway_lod: {dir: /path/to/railway_LOD}
+  railway_station: /path/to/railway/Railway_station.shp
+  school: /path/to/P29/Tokyo_school.shp
+  zenrin:
+    dir: /path/to/Zenrin/13          # one headerless CSV per city code
+    pattern: "*.CSV"
+    encoding: shift_jis
+    crs: EPSG:4301
+  landuse: {paths: [/path/to/L03-b-u-21_5339.shp, /path/to/L03-b-u-21_5340.shp]}
+  population: /path/to/500m_mesh_2024_13.shp
+  od: /path/to/softbank_od.csv
+  trips: /path/to/gps_trips.csv
+  survey: /path/to/survey.csv
+  # Columns can be renamed per source, e.g.
+  # school: {path: ..., columns: {id: P29_002, name: P29_004, address: P29_005}}
+
+params:
+  poi_road_max_distance_m: 20
+  region_nearby_max_distance_m: 3000
+  station_merge_distance_m: 500
+  loop_lines: ["山手線"]
+  landuse_attract_threshold: 0.2
+  survey_reference_year: 2023
+  split: {train: 0.9, valid: 0.05, seed: 2026}
+  text_typed_relations: false
